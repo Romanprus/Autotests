@@ -1,0 +1,9 @@
+{
+  "base_url": "https://courses.ultimateqa.com/",
+  "email": "test_auto50@gmail.com",
+  "reset_email": "testing_24@gmail.com",
+  "password": "number2000",
+  "invalid_name": "Adam_Moroz",
+  "invalid_pass": "DC Comics",
+  "browser_id": "1"
+}
