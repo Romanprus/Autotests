@@ -18,7 +18,10 @@ class DriverFactory:
         if int(driver_id) == DriverFactory.CHROME:
             chrome_options = Options()
             if is_headless:
-                chrome_options.add_argument("--headless")
+                chrome_options.add_argument("--no-sandbox")
+                chrome_options.add_argument('--allow-running-insecure-content')
+                chrome_options.add_argument('--disable-dev-shm-usage')
+                chrome_options.add_argument("--window-size=1920x1080")
             driver = Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
         elif int(driver_id) == DriverFactory.FIREFOX:
             driver = Firefox(service=Service(GeckoDriverManager().install()))

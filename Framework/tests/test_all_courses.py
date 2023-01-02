@@ -4,7 +4,7 @@ import pytest
 @pytest.mark.smoke
 def test_user_search(open_login_window, env):  # possible captcha
     login = open_login_window.login(env.email, env.password)
-    screen = login.enter_something_in_search('Das')
+    screen = login.enter_something_in_search("Das")
     screen = login.press_enter()
     assert screen.is_search_title_visible() is True
 
