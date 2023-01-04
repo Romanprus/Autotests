@@ -18,7 +18,7 @@ class DriverFactory:
             if headless:
                 chrome_options.add_argument("--headless")
                 chrome_options.add_argument("--no-sandbox")
-                 chrome_options.add_argument("--disable-extensions)
+                 chrome_options.add_argument("--disable-extensions")
                 chrome_options.add_argument('--allow-running-insecure-content')
                 chrome_options.add_argument('--disable-dev-shm-usage')
                 chrome_options.add_argument("--window-size=1920x1080")
