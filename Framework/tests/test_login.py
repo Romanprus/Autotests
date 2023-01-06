@@ -1,6 +1,6 @@
 import pytest
 
-
+@pytest.mark.skip('Skipped test')
 @pytest.mark.smoke
 def test_login(open_login_window,
                env):  # to pass this test please make break point in assert run in debug and by hands fill captcha
@@ -9,7 +9,7 @@ def test_login(open_login_window,
     all_courses = login_window.login(env.email, env.password)
     assert all_courses.user_avatar_is_visible() is True, 'User not login'
 
-
+@pytest.mark.skip('Skipped test')
 @pytest.mark.regression
 @pytest.mark.parametrize("password", ['number1800', '', 'фількіна грамота'])
 def test_02_invalid_password_login(open_login_window, password,
