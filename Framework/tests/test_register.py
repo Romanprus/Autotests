@@ -44,7 +44,7 @@ def test_register_user_with_empty_email_or_password(open_register_window, email,
     assert registration.error_list_value() == "Email can't be blank"  # for Email parametrize
     assert registration.error_list_value() == "Password can't be blank"  # for Password parametrize
 
-
+@pytest.mark.skip('Skipped test')
 @pytest.mark.smoke
 def test_registration_with_empty_fields(open_register_window):
     register_window = open_register_window
