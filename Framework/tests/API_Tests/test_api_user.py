@@ -11,7 +11,7 @@ def test_get_user_by_id():
 
 
 def test_invalid_user_id():
-    response = Users().get_user_by_id(1)
+    response = Users().get_user_by_id(1222222)
     assert response.status_code == HTTPStatus.NOT_FOUND
 
 
