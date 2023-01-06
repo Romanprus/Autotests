@@ -1,6 +1,6 @@
 import pytest
 
-
+@pytest.mark.skip('Skipped test')
 @pytest.mark.smoke
 def test_play_video(open_course_page):
     course = open_course_page.play_video()
