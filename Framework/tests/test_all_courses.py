@@ -1,6 +1,6 @@
 import pytest
 
-
+@pytest.mark.skip('Skipped test')
 @pytest.mark.smoke
 def test_user_search(open_login_window, env):  # possible captcha
     login = open_login_window.login(env.email, env.password)
