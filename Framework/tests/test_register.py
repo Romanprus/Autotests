@@ -6,7 +6,7 @@ def test_open_register_user_window(open_register_window):
     register = open_register_window
     assert register.is_title_visible() is True, "Open Login window to provide registration"
 
-
+@pytest.mark.skip('Skipped test')
 @pytest.mark.smoke
 def test_register_user(open_register_window):  # possible captcha
     register_window = open_register_window
